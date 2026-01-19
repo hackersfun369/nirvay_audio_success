@@ -53,6 +53,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       
       log = '✅ SUCCESS\n${video.title}\nDuration: ${video.duration}\n'
           'Quality: ${audio.qualityLabel} (${audio.bitrate}kbps)\n'
+          'Audio URL: ${audio.url}\n\n'
           'Playing...';
       
       await player.setUrl(audio.url.toString());
